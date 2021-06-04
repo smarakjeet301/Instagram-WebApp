@@ -14,6 +14,7 @@
 .post__caption{
     font-weight: normal;
     padding: 10px;
+    text-align: left;
 }
 .post__header{
     display: flex;
@@ -30,3 +31,41 @@
     padding: 5px;
   
   }
+
+.comment__box{
+    display: flex;
+    margin-top: 10px;
+   
+    
+}
+
+.post_comment_input{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid lightgray;
+}
+
+.comment_post_button{
+    flex: 0;
+    border: none;
+    background-color: transparent;
+    color: #6082a3;
+    border-top: 1px solid lightgray;
+}
+
+.comments{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    display: flex;
+}
+
+.comments_style{
+    font-size: x-small;
+}
+
+.text_style_comment{
+    font-size: x-small;
+}

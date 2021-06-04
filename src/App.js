@@ -52,7 +52,7 @@ function App() {
   const [openUpload, setOpenUpload] = useState(false);
   const [image, setImage] = useState(null);
   const [progress, setProgress] = useState(0);
-  const [comments, setComments] = useState([]);
+
 
 
 
@@ -175,6 +175,9 @@ function App() {
 
 
 
+
+
+
   useEffect(() => {
 
 
@@ -187,7 +190,7 @@ function App() {
 
 
 
-      setPosts(snapshot.docs.map(doc => doc.data()));
+      setPosts(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
 
 
 
@@ -326,22 +329,24 @@ function App() {
       </div>
 
       <div className="app__posts">
-        <center>
-          {
 
-            posts.map((post) => (
+        {
 
-
+          posts.map((post, id) => (
 
 
 
-              <Post username={post.username} caption={post.caption} imageUrl={post.imageUrl} />
 
-            )
-            )
-          }
+            <center>
+              <Post key={post.id} postId={post.id} username={post.username} user={user} caption={post.caption} imageUrl={post.imageUrl} />
 
-        </center>
+            </center>
+
+          )
+          )
+        }
+
+
       </div>
 
 
