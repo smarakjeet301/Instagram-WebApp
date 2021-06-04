@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+}
+.app_header{
+  background-color: white;
+  object-fit: contain;
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
+  justify-content: space-between;
+  display: flex;
+
+}
+.app_headerImage{
+  width: 100px;
+  margin-left: 10px;
+}
+
+.app{
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.signup_button_{
+  text-transform: capitalize;
+}
+
+.inputStyles{
+  margin-bottom: 10px;
+  border: 0.5px solid darkgrey;
+  padding: 5px;
+
+}
+
+
+
+.signup{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.signup_button{
+  background: #405DE6;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.signup_button {
+  background: #0796f6;
+  color: white;
+  text-transform:capitalize;
+}
+
+.app__loginContainer{
+ display: flex;
+}
+
+.progress_style{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.app__posts{
+  padding: 10px;
+}
